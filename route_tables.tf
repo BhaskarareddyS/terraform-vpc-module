@@ -21,7 +21,7 @@ resource "aws_default_route_table" "private_route" {
 
 
   tags = {
-    Name = "my-private-route-table"
+    Name = "${var.product}.${var.environment}-private_route"
   }
 }
 
