@@ -1,5 +1,4 @@
-
-Terraform-vpc-module---
+Take the referance below code to build the VPC in your account .
 
 module "vpc-dev" {
 
