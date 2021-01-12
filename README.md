@@ -1,14 +1,17 @@
 
 Terraform-vpc-module---
 
-module "vpc" {
-  source = "git@github.com:bhargavimandala/terraform-vpc-module.git"
-  product = var.product
-  environment = var.environment
-  vpc_cidr = var.cidr_range
-  tenancy = "default"
-  public_subnets = var.public_subnet #example--  "10.0.1.0,10.0.2.0"
-  private_subnets = var.private_subnet #example -- "10.0.3.0/24,10.0.4.0/24"
+module "vpc-dev" {
+
+ source = "git@github.com:sbrTechWorld/terraform-vpc-module.git"
+
+  product            = "sales"
+  environment        = "dev"
+  vpc_cidr           = "10.0.0.0/23"
+  tenancy            = "default"
+  public_subnets     = "10.0.0.0/25,10.0.0.128/25"
+  private_subnets    = "10.0.1.0/25,10.0.1.128/25"
   availability_zones = "eu-west-2a,eu-west-2b"
 
 }
+
