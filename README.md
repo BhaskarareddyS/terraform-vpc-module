@@ -1,4 +1,4 @@
-Take the referance below code to build the VPC in your account .
+Take the referance below code to build the VPC in your account ..
 
 module "vpc-dev" {
 
