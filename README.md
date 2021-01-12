@@ -1,4 +1,5 @@
 Take the referance below code to build the VPC in your account ..
+use referance for CIDR calculater https://www.davidc.net/sites/default/subnets/subnets.html
 
 module "vpc-dev" {
 
